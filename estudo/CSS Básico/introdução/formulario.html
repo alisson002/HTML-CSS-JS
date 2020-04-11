@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+	</head>
+	<body>
+
+		<h1>Formulario Bikcraft</h1>
+
+		<form action="enviar.php" method="post" name="form">
+		<!-- o action vai definor o que o formulario vai fazer, mas usando outra linguagem -->
+		<!-- geralmente pra formulario simples de site é pra alguma outra pagina em php -->
+		<!-- usaremos modelos prontos -->
+		<!-- method tem 2 metodos, geralmente se utiliza o post pra enviar dados pro servidor, mas tem o get que pega dados do servidor como uma busca por exemplo -->
+		<!-- name deve ser um nome unico -->
+
+			<div>
+				<label for="nome">Nome*</label>
+				<!-- tipo do nosso imput -->
+				<!-- for qr dizer, essa label é para: o nome -->
+				<input id="nome" name="Nome" type="text" required>
+				<!--  por tem for nome, poe id nome aqui, assim linkando o nome com a caixa de texto -->
+			</div>
+			
+			<div>
+				<label for="email">Email*</label>
+				<input id="email" name="email" type="text" required>
+			</div>
+
+			<div>
+				<p>Escolha a bicicleta</p>
+				<label for="retro"><input id="retro" type="checkbox" value="retro">Retro</label><br>
+				<label for="esporte"><input id="esporte" type="checkbox" value="esporte">Esporte</label><br>
+				<label for="passeio"><input id="passeio" type="checkbox" value="passeio">Passeio</label>
+			</div>
+			<!-- caixinha pra selecionar -->
+			<br>
+			<label for="mensagem">Mensagem</label>
+			<br>
+			<textarea id="mensagem" name="mensagem" required></textarea>
+			<br>
+
+			<div>
+				<label for="unittype">Select unit type:</label>
+				<select id="unittype" name="unittype">
+					<option value="1"> Miner </option>
+					<option value="2"> Puffer </option>
+					<option value="3" selected> Snipey </option>
+					<option value="4"> Max </option>
+					<option value="5"> Firebot </option>
+				</select>
+			</div>
+			<br>
+			<button type="submit">Enviar</button>
+
+		</form>
+		<!-- formularios são usados paro o encio de daods ao servidor -->
+
+		<!-- name: nome unico do elemento
+			 required: especifica campo obrigatorio
+			 id: id unico referente ao label
+			 type: tipo de input, senha text, botão... -->
+
+			 <!-- https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input -->
+	</body>
+</html>

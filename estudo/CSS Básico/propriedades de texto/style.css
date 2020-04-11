@@ -1,0 +1,53 @@
+div {
+	margin: 40px auto;
+	/*para alinhar ao centro, com dist de 40px da borda da caixa*/
+	width: 400px;
+	background: #eee;
+	padding: 10px;
+}
+
+p {
+	color: #000;
+	font: italic bold 14px/20px Helvetica, Arial;
+	text-align: left;
+	/*serve para alinha o texto*/
+	text-transform: lowercase;
+	/*para colocar todas em maiusculo ou todas em minusculo, ou so as primeira em maiusculo*/
+	text-indent: 40px;
+	/*margem no começo do texto, tipo redação*/
+	text-shadow: 20px 1px #fff;
+	/*coloca sombra. se colocar mais um numero entre a cor e o px ele poe borrado tb*/
+	white-space: nowrap;
+	/*para n quebrar o texto*/
+	word-spacing: 20px;
+	/*dist entre as palavras*/
+	letter-spacing: ;
+	/*dist entre as letras*/
+}
+
+a {
+	text-decoration: none;
+	/*tira o sublinado no link ou coloca em n link, poe linha em cima tb*/
+}
+
+ul {
+	list-style: none;
+	/*define nada p a lista*/
+	list-style-type: square;
+	/*coloca pontos ou quadrados nas listas, marcador*/
+	list-style-position: ;
+	/*define onde fica o marcador, dentro ou fora da lista*/
+}
+p {
+	color: #000;
+	font-style: normal;
+	font-weight: bold;
+	/*peso da fonte*/
+	font-size: 14px;
+	line-height: 25px;
+	/*altura da linha*/
+	font-family: "helvetica neue", helvetica, arial;
+	/*pode fazer tudo separado assim, fica mais organizado*/
+	font: italic bold 14px/20px Helvetica, Arial;
+}
+

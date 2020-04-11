@@ -1,0 +1,53 @@
+header{
+	width: 800px;
+	height: 60px;
+	padding: 20px 0;
+	background: #6b35b3;
+	margin-bottom: 20px;
+}
+
+h1, p{
+	text-align: center;
+	color: #fff;
+	font-size: 24px;
+	font-family: arial;
+	text-transform: uppercase;
+	font-weight: normal;
+}
+
+footer{
+	width: 800px;
+	height: 60px;
+	padding: 20px 0;
+	background: #6b35b3;
+	clear: both;
+	/*faz com que nada flutue ao lado do elemento, se n tivesse ele ficaria bugado por traz dos outro q estão flutuando*/
+}
+
+article{
+	width: 580px;
+	height: 300px;
+	background: #222;
+	float: left;
+}
+
+aside{
+	width: 200px;
+	height: 300px;
+	background: #ccc;
+	float: left;
+	/*faz o elemento flutuar ao lado de outro ao invez de ficar so em baixo*/
+	margin-left: 20px;
+}
+.container{/*tem que definir uma largura para que ela centralize direito so oq vc qr*/
+	margin: 0 auto;
+	width: 800px;
+}
+
+.conteudo{
+	overflow: auto;
+	/*destaca o conteudo, coloca ele pra cima, não estava dando margin, e com ele deu*/
+	/*usar na caixa q envolve os elemntos flutuantes*/
+	margin-bottom: 20px;
+}
+/*para colocar elementos de uma lista um do lado do outro, é só usar o comando display: inline-block, para manter o tamanho definido de altura e largura, se fo so inline n mantem, mas cria menu so com o inline, co o inline blok é pra se quiser uma area clicavel maior*/

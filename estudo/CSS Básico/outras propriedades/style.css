@@ -1,0 +1,25 @@
+body {
+	background-color: #333;
+	background-image: url("esporte-1.jpg");
+	/*pega a imagem como fundo*/
+	background-repeat: no-repeat;
+	/*não repete a iamgem mesmo q ela seja menor q o fundo total*/
+	background-attachment: fixed;
+	/*mesmo se scrolar ela n sai do liga, fica fixa*/
+	background-position: center;
+	/*deixa no centro do fundo*/
+	background-size: cover;
+	/*para colocar um tamanho exato em uma imagem, p cober mantem a imagem toda sem cortar mantendo as proporções mas ainda no centro,n esmaga a imagem*/
+	height: 5000px;
+}
+
+div {
+	width: 400px;
+	height: 400px;
+	margin: 0 auto;
+	background: url("esporte-4.jpeg") no-repeat center;
+	background-size: cover;
+	box-shadow: 0 10px 0 #000;
+	visibility: hidden;
+	display: none;
+}

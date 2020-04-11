@@ -1,0 +1,26 @@
+.container {
+	width: 800px;
+	height: 500px;
+	margin: 0 auto;
+	/*margem com relação as bordas da tela ou de uma caixa dentro da caixa, aqui que centraliza as parada e tal*/
+	background: #ddd;
+}
+
+.box-1 {
+	width: 200px;
+	height: 80px;
+	background: #aaa;
+	padding: 10px 20px;
+	/*pode ser declarado especificando os 4 valeros, ou 2 sedndo top-botom e lados,
+	ou pode ser tb somente 1 valo, dizendo q os 4 são o msm*/
+	border-bottom: 10px solid #000;
+}
+
+.box-2 {
+	width: 200px;
+	height: 80px;
+	background: #aaa;
+	padding: 10px 20px;
+	border-bottom: 10px solid #000;
+	margin: 50px 20px;
+}

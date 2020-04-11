@@ -1,0 +1,56 @@
+* {
+	text-transform: uppercase;
+	color: orange;
+}
+/*vai pegar todos os elementos do site quwe não estiverem com estilo mais especifico*/
+
+p {
+	font-size: 16px;
+}
+
+div {
+	height: 200px;
+	width: 200px;
+	/*altura e largura*/
+	padding: 20px;
+	/*gera espaço em volta do elemento*/
+	margin-bottom: 20px;
+	/*espaço em baixo*/
+	background: #bbb;
+	/*cor do fundo*/
+}
+
+div	a, div p {
+	color: green;
+}
+
+a.btn-comprar {
+	color: black;
+}
+/*classe especifica para a(negocio do link)*/
+
+.principal {
+	width: 100px;
+}
+/*classe*/
+/*coloca dentro do </>*/
+
+a {
+	width: 100px;
+	height: 20px;
+	background: black;
+	padding: 10px;
+}
+
+a:hover {
+	font-size: 20px;
+	color: red;
+	background: blue;
+}
+/*classe para mudar o estilo quando passar o mouse por cima*/
+
+a:visited {
+
+}
+/*classe para quando já visitou um link e ele fica marcado*/
+/*por exemplo o roxo do google*/

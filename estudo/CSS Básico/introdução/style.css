@@ -1,0 +1,16 @@
+p{
+	color: green;
+	/*propriedade: valor*/
+	font-size: ;
+	/*tamanho da fonte, 1em 2em....*/
+}
+
+h1{
+	color: #14323455;
+}
+
+body{
+	color: blue;
+}
+/*como coloqui o azul dps do cinza, msm que o h1 esteja dentro do body o cinza foi dito primeiro então ele prevalece*/
+
