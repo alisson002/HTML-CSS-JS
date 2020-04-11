@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<title>Bikcraft - Contato - 85 9999-9999</title>
+
+	<meta name="description" content="Compre a sua bicicleta personalizada na BikCraft. Possuimos modelos Passeio, Retrô e Esporte.">
+	<!-- descrição do site que aparece no google -->
+	<!-- descrição tem até 140 caracteres -->
+	<!-- é bom ter uma descrição para cada pagina especifica -->
+
+	<meta property="og:type" content="website"/>
+	<meta property="og:title" content="Bikcraft - Contato - 85 9999-9999"/>
+	<meta property="og:description" content="Compre a sua bicicleta personalizada na BikCraft. Possuimos modelos Passeio, Retrô e Esporte.">
+	<meta property="og:url" content="http://bikcraft.com/contato.html"/>
+	<!-- muda isso em cada pagina -->
+	<meta property="og:image" content="http://bikcraft.com/img/og-image.png"/>
+	<!-- toda essa parte é daquele negocio de quando vc manda um link pelo face e ele gera aquele negocinho no chat -->
+	<!-- esse ultimo é a imagem que mostra, mas n pode ser um camnho local tem q ser com url -->
+	<!-- imagem feita no adobexd com fundo preto(300px x 300px) e logo do site em amarelo -->
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- p facilitar o tamanho do responsovo, de acordo com a tela total especifica do dispositivo. -->
+
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- marca da aba do site -->
+	<!-- favicon feito no adobexd, usando a logo normal mas deletando todas as letras exeto o B, colocando fundo preto(200x200) e borda amarela -->
+	<!-- icialmente como png, mas convertido para favicomem um gerador de favicom no google -->
+	
+
+	<link rel="stylesheet" href="css/normalize8.0.1.css">
+	<link rel="stylesheet" href="css/reset.css">
+	<!-- não é o msm do erik maier -->
+	<link rel="stylesheet" href="css/grid.css">
+	<!-- criado com base no skeleton -->
+	<link rel="stylesheet" href="css/style-ORIGINAL.css">
+	<link rel="stylesheet" href="css/contato.css">
+	<link rel="stylesheet" href="css/responsivo.css">
+
+	<!-- ta tudo comentado agora pq eu juntai todos em um só, copiando e colando -->
+	<!-- NO FINAL DE TUDO É BOM COLOCAR TODO O CSS EM UM ARQUIVO SÓ, NÃO APAGA OS QUE ESTÃO SEPARADOS, SÓ COPIA E COLA EM UM OUTRO STYLE.CSS FORA DA PASTA CSS -->
+	<!-- FICA MELHOR PRO NEGOCIO LÁ DE REQUESTE DE QUANDO COLOCAR NO SERVIDOR -->
+	<!-- farei dps com tempo para corrigir os bug -->
+	<!-- lembrar de usar o site lá pra comprimir o css -->
+
+
+	<script>document.documentElement.classList.add("js")
+		/*documente falando com documanto geral*/
+		/*documenteElment, isso é o html*/
+		/*classList é p listar as classes q existem*/
+		/*add é p adicionar as classes e dentro dele coloca uma string*/
+		/*é passado um texto dentro do add e o texto que eu quero passar é js*/
+	</script>
+</head>
+<body>
+ 
+ <header class="header">
+
+		<div class="container">
+
+			<a href="index.html" class="grid-2">
+				<img src="img/bikcraft.svg" alt="Bikcraft">
+			</a>
+
+			<nav class="grid-14 header_menu">
+				<ul>
+					<li><a href="sobre.html">Sobre</a></li>
+					<li><a href="produtos.html">Produtos</a></li>
+					<li><a href="portfolio.html">Portfólio</a></li>
+					<li><a href="contato.html" class="menu-ativo">Contato</a></li>
+				</ul>
+			</nav>
+
+		</div>
+
+	</header>
+
+		<section class="introducao_interna interna_contato">
+			<div class="container">
+				<h1 data-anime="400" class="fadeinDown">contato</h1>
+					<p data-anime="800" class="fadeinDown">tire suas dúvidas conosco</p>
+			</div>
+		</section>
+
+		<section class="orcamento fadeinDown" data-anime="1200">
+			
+			<div class="container"><!-- tem q colocar uma div detro de uma section coma class container quando tem um fundo q se expande 100% -->
+
+				<form id="form_orcamento" method="POST" action="./enviar-sendgrid.php" class="form grid-8 formphp">
+
+					<!-- METHOD É O METODO DE ENVIO DO FORMULARIO PARA O E-MAIL -->
+					<!-- ACTION É O CAMINHO DO ARQUIVO PHP QUE EU VOU USAR -->
+					<!-- a classe formphp é p o js -->
+					<label for="nome">Nome</label>
+					<input type="text" id="nome" name="nome" required>
+					<!-- atributo name é p o php reconhecer isso como nome e pegar ele para mandar junto no e-mail -->
+					<!-- o atributo required é pra q aquele campo q tem ele seja de preenchimento obrigatorio -->
+					<label for="e-mail">E-mail</label>
+					<input type="email" id="e-mail" name="email" required>
+					<label for="telefone">Telefone</label>
+					<input type="text" id="telefone" name="telefone">
+
+					<label class="nao-aparece">Se vc não é robo, deixe em branco.</label>
+					<input type="text" class="nao-aparece" name="leaveblank">
+					<label class="nao-aparece">Se vc não é robo, não mude este campo.</label>
+					<input type="text" class="nao-aparece" name="dontchange" value="http://">
+					<!-- para q robos n mandem span -->
+					
+					<label for="mensagem">Mensagem</label>
+					<textarea id="mensagem" name="mensagem" required></textarea>
+					<button id="enviar" name="enviar" type="submit" class="btn contatos-forms">Enviar</button>
+
+				</form><!-- para o fomulario -->
+
+				<div class="orcamento_dados grid-8">
+					<h3>Dados:</h3>
+					<span class="caixa">+55 85 9999-9999</span><!-- pesquisar quando usar -->
+					<span class="dados-email caixa">orcamento@bikcraft.com</span>
+					<h3>Endereço:</h3>
+					<span>Av. Capitão Mor Gouveia - Lagoa Nova</span>
+					<span>Natal - RN</span>
+					<h3>Redes Sociais:</h3>
+					<ul>
+						<li><a href="https://www.facebook.com/AlissuMoreira/" target="_blank"><img src="img/redes-sociais/facebook.svg" alt="Facebook Bikcraft"></a></li>
+						<li><a href="https://www.instagram.com/imalisson.m/" target="_blank"><img src="img/redes-sociais/instagram.svg" alt="Instagram Bikcraft"></a></li>
+						<li><a href="http://twitter.com" target="_blank"><img src="img/redes-sociais/twitter.svg" alt="Twitter Bikcraft"></a></li><!-- o _blank é p abrir em outra aba -->
+					</ul>
+				</div>
+			</div>
+
+		</section>
+
+		<div class="container mapa">
+			<a href="http://google.com/maps" target="_blank" class="grid-16"><img src="img/endereco-bikcraft.jpg" alt="Endereço da Bikcraft"></a>
+		</div>
+
+		<div class="quebra"><!-- classe de quebra, p quebrar esse so texto do site de ponta a ponta -->
+			
+			<blockquote class="quote-externo container"><!-- container aqui p garantir q tenha o clear both e n fica um em cima do outro -->
+				<p>o verdadeiro segredo da felicidade está no em ter um genuíno
+				interesse por todos os detalhes da vida cotidiana"
+				</p>
+				<cite>WILLIAM MORRIS</cite>
+			</blockquote>
+
+		</div><!-- era uma section mas deu erro na validação porn ter um h2 ou outro -->
+
+		<footer><!-- empre que uma parte fica em 100% da tela, temos q ter um classe externa, nesse caso no separador mais de fora, e na div de entro coloca o container, para o conteudo fica alinhado -->
+			<div class="footer">
+
+				<div class="container">
+
+					<div class="grid-8 footer_historia">
+						<h3>Nossa História</h3>
+						<p>O verdadeiro segredo da felicidade está no em ter um genuíno
+						interesse por todos os detalhes da vida cotidiana. Interesse por todos os detalhes da vida cotidiana.
+						</p>
+					</div>
+
+					<div class="grid-4 footer_contato">
+						<h3>Contato</h3>
+						<ul>
+							<li>- 85 9999-9999</li>
+							<li>- contato@bikcraft.com</li>
+							<li>- Natal - RN</li>
+						</ul>
+					</div>
+
+					<div class="grid-4 footer_redes">
+						<h3>Redes Sociais</h3>
+						<ul>
+							<li><a href="https://www.facebook.com/AlissuMoreira/" target="_blank"><img src="img/redes-sociais/facebook.svg" alt="Facebook Bikcraft"></a></li>
+							<li><a href="https://www.instagram.com/imalisson.m/" target="_blank"><img src="img/redes-sociais/instagram.svg" alt="Instagram Bikcraft"></a></li>
+							<li><a href="http://twitter.com" target="_blank"><img src="img/redes-sociais/twitter.svg" alt="Twitter Bikcraft"></a></li><!-- o _blank é p abrir em outra aba -->
+						</ul>
+					</div>
+
+				</div>
+			</div>
+
+			<div class="copy">
+				<div class="container">
+					<p class="grid-12">BikCraft 2020 - Alguns direitos reservados</p>
+					<p class="grid-4">Autor: Alisson Moreira</p>
+				</div>
+			</div>
+		</footer>
+
+		<script src="./js/simple-anime.js"></script>
+		<script src="./js/simple-form.js"></script>
+		<script src="./js/simple-slide.js"></script>
+		<script src="./js/script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,494 @@
+/*flex box é mais facil q usar grid e mais pratico tb*/
+/*gridlayout tb*/
+
+/*estilos gerais*/
+body{
+	font-family: Arial, Helvetica, sans-serif;
+}
+p{
+	font-family: georgia,"times new roman", serif;
+	font-size: 14px;
+	line-height: 20px;
+}
+
+img{
+	display: block;
+	max-width: 100%;/*para layout fluido, ficar adaptavel a tela*/
+}
+
+.btn{
+	border: 3px solid #fec63e;
+	padding: 10px 20px;
+	color: #fec63e;
+	text-transform: uppercase;
+	font-size: 14px;
+	font-weight: bold;
+	line-height: 20px;
+	letter-spacing: .07em;
+}
+
+.introducao .btn:hover {
+	color:#fff;
+	border: 3px solid #fff;
+}
+
+.call .btn:hover {
+	color:#000;
+	border: 3px solid #000;
+}
+
+.subtitulo{
+	font-weight: bold;
+	font-size: 24px;
+	line-height: 30px;
+	letter-spacing: .07em;
+	color: #000;
+	text-transform: uppercase;
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+.subtitulo:after{
+	content: "";
+	display: block;
+	width: 60px;
+	height: 3px;
+	background: #000;
+	margin: 8px auto 10px auto;/*fica em sentido horario começando de cima*/
+}
+
+.subtitulo_interno{
+	font-weight: bold;
+	font-size: 24px;
+	line-height: 30px;
+	letter-spacing: .07em;
+	color: #000;
+	text-transform: uppercase;
+	margin-bottom: 20px;
+}
+
+.subtitulo_interno:after{
+	content: "";
+	display: block;
+	width: 60px;
+	height: 3px;
+	background: #000;
+	margin: 8px 0;/*fica em sentido horario começando de cima*/
+}
+
+/* Header */
+
+.header {
+	position: static;
+	top: 0;
+	width: 100%;
+	background: #fec63e; /* Amarelo */
+	padding: 5px 0;
+	z-index: 10;
+}
+
+.header_menu {
+	text-align: right;
+}
+
+.header_menu ul li {
+	display: inline-block;
+	margin-left: 25px;
+	margin-top: 20px;
+}
+
+.header_menu ul li a {
+	color: #000;
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: .07em;
+	font-size: 14px;
+	line-height: 20px;
+	padding: 5px 0;
+}
+
+.header_menu ul li a:hover {
+	color: #FFF;
+}
+
+.header_menu ul li a.menu-ativo {/*para poder deixar branco direto quando entra nela*/
+	color: #fff;
+}
+/*introdução*/
+
+.introducao {
+	width: 100%;
+	height: 380px;
+	background: url("../img/bg.jpg") no-repeat center;
+	background-size: cover;
+	margin-top: 0px;
+	text-align: center;
+	padding-top: 80px;
+}
+
+.introducao h1 {
+	font-size: 48px;
+	color: #FFF;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.quote-externo{
+	max-width: 260px;
+	margin: 0 auto;
+	color: #fff;
+	margin-bottom: 30px;
+}
+
+.quote-externo p{
+	font-style: italic;
+}
+
+.quote-externo p:before, .quote-externo p:after{
+	content: "";
+	display: block;
+	width: 60px;
+	height: 3px;
+	background: #fff;
+	margin: 12px auto 10px auto;/*fica em sentido horario começando de cima*/
+}
+
+.quote-externo cite{
+	font-style: normal;
+	font-weight: bold;
+	font-size: 14px;
+	letter-spacing: .07em;
+}
+
+/*introdução interna*/
+
+.introducao_interna{
+	width: 100%;
+	height: 160px;
+	margin-top: 0;
+	text-align: center;
+	color: #fff;
+	padding-top: 30px;
+}
+
+.introducao_interna h1 {
+	font-size: 36px;
+	color: #FFF;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.introducao_interna h1:after{
+	content: "";
+	display: block;
+	width: 60px;
+	height: 3px;
+	background: #fff;
+	margin: 5px auto 10px auto;/*fica em sentido horario começando de cima*/
+}
+
+
+/*produtos*/
+
+.produtos{
+	padding: 60px 0;
+}
+
+.produtos_lista li{
+	background: #fec63e;
+	text-align: center;
+}
+
+.produtos_lista li h3{
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 25px;
+	text-transform: uppercase;
+	letter-spacing: .07em;
+	margin-top: 15px;
+}
+
+.produtos_lista li h3:after{
+	content: "";
+	display: block;
+	width: 60px;
+	height: 3px;
+	background: #000;
+	margin: 5px auto;/*fica em sentido horario começando de cima*/
+}
+
+.produtos_lista li p{
+	padding: 2px 20px 15px 20px;
+}
+
+.produtos_icone{
+	background: #000;
+	text-align: center;
+	padding: 30px 50px;
+}
+
+.call{
+	text-align: center;
+	padding-top: 20px;
+	clear: both;
+}
+
+.call p{
+	margin-bottom: 20px;
+}
+
+/*portifolio*/
+
+.portfolio{
+	background: #000;
+	width: 100%;
+	padding: 40px 0;
+	margin-top: 20px;
+}
+
+.portfolio .call .btn:hover {
+	color:#fff;
+	border: 3px solid #fff;
+}
+
+.portfolio .call p{
+	color: #fff;
+}
+
+.portfolio .subtitulo{
+	color: #fec63e;
+}
+
+.portfolio .subtitulo:after{
+	background: #fec63e;
+}
+
+.portfolio_lista li:last-child{
+	margin-top: 20px;
+}
+
+/*qualidade*/
+
+.qualidade{
+	padding: 60px 0;
+}
+
+.qualidade img{
+	margin: 0 auto;
+}
+
+.qualidade:after{
+	content: "";
+	width: 634px;
+	height: 83px;
+	display: block;
+	background: url("../img/linhas.svg") no-repeat center;
+	position: absolute;/*5-1-8*/
+	top: 209px;
+	right: 162px;
+	z-index: -1;
+}
+
+.qualidade li{
+	text-align: center;
+	padding: 0 40px;
+}
+
+.qualidade_lista{
+	padding-top: 20px;
+	overflow: auto;/*pra tirar o bug na pagina produtos*/
+	/*letras de qualidade por cima da imagem*/
+	/*clear-fix*/
+}
+
+.qualidade_lista li h3{
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 25px;
+	text-transform: uppercase;
+	letter-spacing: .07em;
+	margin-top: 15px;
+}
+
+.qualidade_lista li h3:after{
+	content: "";
+	display: block;
+	width: 60px;
+	height: 3px;
+	background: #000;
+	margin: 5px auto;/*fica em sentido horario começando de cima*/
+}
+
+/*quebra*/
+
+.quebra{
+	width: 100%;
+	height: 220px;
+	background: url(../img/bg-footer.jpg) no-repeat center;
+	background-size: cover;/*n sei pra q serve*/
+	text-align: center;
+	padding-top: 50px;
+}
+
+.quebra .quote-externo{
+	max-width: 400px;
+}
+
+/*footer*/
+
+.footer{
+	width: 100%;
+	background: #000;
+	color: #fff;
+	padding: 20px 0;
+}
+
+.footer h3{
+	font-size: 18px;
+	line-height: 25px;
+	color: #fec63e;
+	text-transform: uppercase;
+	letter-spacing: .07em;
+	font-weight: bold;
+}
+
+.footer h3:after{
+	content: "";
+	display: block;
+	width: 60px;
+	height: 3px;
+	background: #fec63e;
+	margin: 5px 0 15px 0;/*fica em sentido horario começando de cima*/
+}
+
+.footer_historia{
+	padding-right: 40px;
+}
+
+.footer_contato ul li{
+	font-size: 14px;
+	line-height: 20px;
+	font-family: georgia, "times new roman", serif;
+}
+
+.footer_redes ul li{
+	display: inline-block;
+	margin-right: 10px;
+}
+
+.footer_redes ul li a{
+	border: 3px solid #fec63e;
+	display: block;
+	width: 55px;
+	height: 55px;
+	padding: 8px;
+}
+
+.footer_redes ul li:first-child a:hover{
+	color:#1094F4;
+	border: 3px solid #fff;
+	background: #1094F4;
+}
+
+.footer_redes ul li:nth-child(2) a:hover{
+	color:#1094F4;
+	border: 3px solid #536BCD;
+	background: #D92F7B;
+}
+
+.footer_redes ul li:nth-child(3) a:hover{
+	color:#1094F4;
+	border: 3px solid #fff;
+	background: #1886C9;
+}
+.copy{
+	width: 100%;
+	background: #fec63e;
+	padding: 20px 0; 
+}
+
+/*js*/
+/*coloca o .js na frente para evitar bugs e sumir as coisas, só vai aplicar os slides se o js existir*/
+
+.js [data-slide] {/*entre os colchetes serve pra selecionar tudo que tiver com o atributo data-slide*/
+  position: relative;
+}
+
+.js [data-slide] > * {/*aqui ele selecionar tudo que tiver diretamente dentre do data-slide*/
+	/*o sinal de asterisco é um seletor total*/
+  position: absolute;
+  top: 0px;
+  opacity: 0;
+}
+
+.js [data-slide] > .active {/*aqui eu seleciono o item ativo no momento*/
+  position: relative;
+  opacity: 1;/*opacidade  vai de 0 a 1*/
+  transition: opacity 500ms;/*pode passar ou nada, que transiciona tudo; pou exatamente o que vc quer q tanha uma transição, e eu selecionei a opacidade*/
+}
+
+.js [data-slide-nav] {/*vê o nome da atributo inspecionando o elemento, ai ele mostra os itens ativos*/
+	display: block;
+	text-align: center;
+	margin-top: 20px;
+}
+
+.js [data-slide-nav] button{
+	display: inline-block;
+	width: 12px;
+	height: 12px;
+	margin:4px;
+	border: none;
+	padding: 0;
+	border-radius: 6px;/*para criar um circulo*/
+	text-indent: -99px;/*para colocar os numeros que já vem por padrão pra navegação do slide, para o canto da tela*/
+	overflow: hidden;/*para n mostrar nada que fique do lado de fora*/
+	background: #1d1d1d;
+}
+
+.js [data-slide-nav] button.active{/*botão com a classe active, por isso ta junto*/
+	background: #fec63e;
+}
+
+/*animação*/
+
+.js [data-anime] {
+	opacity: 0;/*começa em 0*/
+
+	/*transform: translate3d(0, -20PX, 0);  *//*tirei pois o fadeindown ja faz tudo por ele mesmo*/
+
+	/*geralmente usamos o 3d pq ativa a parte grafica do site e é mais rapido /*(X, Y, Z)*/
+	/*o negativo faz vir de cima, é o contrario*/
+}
+
+.js .fadeinDown{
+	transform: translate3d(0, -20PX, 0);/*pra ficar mais facil de fazer com todos, pois é so add essa classe la nos negocio do html*/
+
+	/*se eu colocar esse transform ali em cima no data-anime, fica mais facil de fazer as mudanças no codigo do html, mas assim separado, temos mais liberdade de fazer outras animações*/
+}
+
+.js .anime {
+	opacity: 1;
+	transform: none;
+	transition: opacity 500ms, transform 500ms;/*faz ir de 0 a 1 dentro de Xms*/
+}
+
+.nao-aparece{
+	visibility: hidden;
+	position: absolute;
+	height: 0px;
+}
+
+/*estilo da mensagem de erro ou de sucesso*/
+
+#form-sucesso{
+	color: #31aa39;
+}
+
+#form-erro{
+	color: #f64540;
+}
+
+/*usa # assim no começo pois se trata de uma id, ela está la no script.js */
+
+

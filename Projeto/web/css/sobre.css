@@ -1,0 +1,25 @@
+.interna_sobre{
+	background: url("../img/bg-sobre.jpg") no-repeat center;
+	background-size: cover;
+}
+
+.missao_sobre{
+	padding-top: 60px;
+}
+
+.missao_sobre p{
+	font-size: 18px;
+	line-height: 25px;
+	margin-bottom: 1em;/*1 em relaçãoa  fonte dle, q é 18px exato*/
+	padding-right: 60px;
+}
+
+.missao_sobre ul li{
+	font-size: 18px;
+	font-family: georgia, "times new roman";
+	line-height: 30px;
+}
+
+.foto-equipe{
+	padding-top: 20px;
+}

@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<title>Bikcraft - Bicicletas Personalizadas</title><!-- title deve ter até 70 carac -->
+
+	<meta name="description" content="Compre a sua bicicleta personalizada na BikCraft. Possuimos modelos Passeio, Retrô e Esporte.">
+	<!-- descrição do site que aparece no google -->
+	<!-- descrição tem até 140 caracteres -->
+
+	<meta property="og:type" content="website"/>
+	<meta property="og:title" content="Bikcraft - Bicicletas Personalizadas"/>
+	<meta property="og:description" content="Compre a sua bicicleta personalizada na BikCraft. Possuimos modelos Passeio, Retrô e Esporte.">
+	<meta property="og:url" content="http://bikcraft.com"/>
+	<meta property="og:image" content="http://bikcraft.com/img/og-image.png"/>
+	<!-- toda essa parte é daquele negocio de quando vc manda um link pelo face e ele gera aquele negocinho no chat -->
+	<!-- esse ultimo é a imagem que mostra, mas n pode ser um camnho local tem q ser com url -->
+	<!-- imagem feita no adobexd com fundo preto(300px x 300px) e logo do site em amarelo -->
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- p facilitar o tamanho do responsovo, de acordo com a tela total especifica do dispositivo. -->
+
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- marca da aba do site -->
+	<!-- favicon feito no adobexd, usando a logo normal mas deletando todas as letras exeto o B, colocando fundo preto(200x200) e borda amarela -->
+	<!-- icialmente como png, mas convertido para favicomem um gerador de favicom no google -->
+
+	<link rel="stylesheet" href="css/normalize8.0.1.css">
+	<link rel="stylesheet" href="css/reset.css">
+	<!-- não é o msm do erik maier -->
+	<link rel="stylesheet" href="css/grid.css">
+	<!-- criado com base no skeleton -->
+	<link rel="stylesheet" href="css/style-ORIGINAL.css">
+	<link rel="stylesheet" href="css/responsivo.css">
+
+	<!-- ta tudo comentado agora pq eu juntai todos em um só, copiando e colando -->
+	<!-- NO FINAL DE TUDO É BOM COLOCAR TODO O CSS EM UM ARQUIVO SÓ, NÃO APAGA OS QUE ESTÃO SEPARADOS, SÓ COPIA E COLA EM UM OUTRO STYLE.CSS FORA DA PASTA CSS -->
+	<!-- FICA MELHOR PRO NEGOCIO LÁ DE REQUESTE DE QUANDO COLOCAR NO SERVIDOR -->
+	<!-- farei dps com tempo para corrigir os bug -->
+	<!-- lembrar de usar o site lá pra comprimir o css -->
+
+	<script>document.documentElement.classList.add("js")
+		/*documente falando com documanto geral*/
+		/*documenteElment, isso é o html*/
+		/*classList é p listar as classes q existem*/
+		/*add é p adicionar as classes e dentro dele coloca uma string*/
+		/*é passado um texto dentro do add e o texto que eu quero passar é js*/
+	</script>
+</head>
+<body>
+ 
+ <header class="header">
+
+		<div class="container">
+
+			<a href="index.html" class="grid-2">
+				<img src="img/bikcraft.svg" alt="Bikcraft">
+			</a>
+
+			<nav class="grid-14 header_menu">
+				<ul>
+					<li><a href="sobre.html">Sobre</a></li>
+					<li><a href="produtos.html">Produtos</a></li>
+					<li><a href="portfolio.html">Portfólio</a></li>
+					<li><a href="contato.html">Contato</a></li>
+				</ul>
+			</nav>
+
+		</div>
+
+	</header>
+
+		<section class="introducao">
+			<div class="container">
+				<h1 data-anime="400" class="fadeinDown">Bicicletas Feitas a Mão</h1>
+				<blockquote data-anime="800" class="fadeinDown quote-externo">
+					<p>"não tenha nada em sua casa que você não considere útil ou acredita ser bonito"</p>
+					<cite>WILLIAM MORRIS</cite>
+				</blockquote>
+				<a data-anime="1200" href="produtos.html" class="fadeinDown btn">Orçamento</a>
+			</div>
+		</section>
+
+		<section class="produtos container">
+
+			<h2 class="subtitulo">Produtos</h2>
+
+				<ul class="produtos_lista">
+
+					<li class="grid-1-3">
+						<div class="produtos_icone">
+							<img src="img/produtos/passeio.svg" alt="Bikcraft Passeio">
+						</div>
+						<h3>Passeio</h3>
+						<p>O Lorem Ipsum é um texto modelo da indústria tipográfica e de impressão. O</p>
+					</li>
+
+					<li class="grid-1-3">
+						<div class="produtos_icone">
+							<img src="img/produtos/esporte.svg" alt="Bikcraft Esporte">
+						</div>
+						<h3>Esporte</h3>
+						<p>O Lorem Ipsum é um texto modelo da indústria tipográfica e de impressão. O</p>
+					</li>
+
+					<li class="grid-1-3">
+						<div class="produtos_icone">
+							<img src="img/produtos/retro.svg" alt="Bikcraft Retro">
+						</div>
+						<h3>Retro</h3>
+						<p>O Lorem Ipsum é um texto modelo da indústria tipográfica e de impressão. O</p>
+					</li>
+
+				</ul>
+
+				<div class="call">
+					<p>clique aqui e veja os detalhes dos produtos</p>
+					<a href="produtos.html" class="btn">Produtos</a>
+				</div>
+
+		</section>
+		<!-- fecha produtos -->
+
+		<section class="portfolio">
+
+			<div class="container"><!-- container ta na div pq a section tem q pegar a tela toda -->
+				
+				<h2 class="subtitulo">Portfólio</h2>
+
+				<ul class="portfolio_lista">
+					<li class="grid-8"><img src="img/portfolio/retro.jpg" alt="Bikcraft Retro"></li>
+					<li class="grid-8"><img src="img/portfolio/passeio.jpg" alt="Bikcraft Passeio"></li>
+					<li class="grid-16"><img src="img/portfolio/esporte.jpg" alt="Bikcraft Esporte"></li>
+				</ul>
+				
+				<div class="call">
+					<p>clique aqui e veja os detalhes dos produtos</p>
+					<a href="portfolio.html" class="btn">Portfólio</a>
+				</div>
+
+			</div>
+			
+		</section>
+
+		<section class="qualidade container">
+			
+			<h2 class="subtitulo">Qualidade</h2>
+
+			<img src="img/bikcraft-qualidade.svg" alt="Bikcraft">
+		
+			<ul class="qualidade_lista">
+
+				<li class="grid-1-3">
+					<h3>Durabilidade</h3>
+					<p>O Lorem Ipsum é um texto modelo da indústria tipográfica e de impressão. O Lorem Ipsum tem</p>
+				</li>
+
+				<li class="grid-1-3">
+					<h3>Design</h3>
+					<p>O Lorem Ipsum é um texto modelo da indústria tipográfica e de impressão. O Lorem Ipsum tem</p>
+				</li>
+
+				<li class="grid-1-3">
+					<h3>Sustentabilidade</h3>
+					<p>O Lorem Ipsum é um texto modelo da indústria tipográfica e de impressão. O Lorem Ipsum tem</p>
+				</li>
+				
+			</ul>
+
+			<div class="call">
+				<p>conheça mais a nossa hostoria</p>
+				<a href="sobre.html" class="btn">Sobre</a>
+			</div>
+
+		</section>
+
+		<div class="quebra"><!-- classe de quebra, p quebrar esse so texto do site de ponta a ponta -->
+			
+			<blockquote class="quote-externo container"><!-- container aqui p garantir q tenha o clear both e n fica um em cima do outro -->
+				<p>o verdadeiro segredo da felicidade está no em ter um genuíno
+				interesse por todos os detalhes da vida cotidiana"
+				</p>
+				<cite>WILLIAM MORRIS</cite>
+			</blockquote>
+
+		</div>
+
+		<footer><!-- empre que uma parte fica em 100% da tela, temos q ter um classe externa, nesse caso no separador mais de fora, e na div de entro coloca o container, para o conteudo fica alinhado -->
+			<div class="footer">
+
+				<div class="container">
+
+					<div class="grid-8 footer_historia">
+						<h3>Nossa História</h3>
+						<p>O verdadeiro segredo da felicidade está no em ter um genuíno
+						interesse por todos os detalhes da vida cotidiana. Interesse por todos os detalhes da vida cotidiana.
+						</p>
+					</div>
+
+					<div class="grid-4 footer_contato">
+						<h3>Contato</h3>
+						<ul>
+							<li>- 21 9999-9999</li>
+							<li>- contato@bikcraft.com</li>
+							<li>- Natal - RN</li>
+						</ul>
+					</div>
+
+					<div class="grid-4 footer_redes">
+						<h3>Redes Sociais</h3>
+						<ul>
+							<li><a href="https://www.facebook.com/AlissuMoreira/" target="_blank"><img src="img/redes-sociais/facebook.svg" alt="Facebook Bikcraft"></a></li>
+							<li><a href="https://www.instagram.com/imalisson.m/" target="_blank"><img src="img/redes-sociais/instagram.svg" alt="Instagram Bikcraft"></a></li>
+							<li><a href="http://twitter.com" target="_blank"><img src="img/redes-sociais/twitter.svg" alt="Twitter Bikcraft"></a></li><!-- o _blank é p abrir em outra aba -->
+						</ul>
+					</div>
+
+				</div>
+			</div>
+
+			<div class="copy">
+				<div class="container">
+					<p class="grid-12">BikCraft 2020 - Alguns direitos reservados</p>
+					<p class="grid-4">Autor: Alisson Moreira</p>
+				</div>
+			</div>
+		</footer>
+
+		<script src="./js/simple-anime.js"></script>
+		<script src="./js/simple-slide.js"></script>
+		<script src="./js/script.js"></script>
+
+</body>
+</html>

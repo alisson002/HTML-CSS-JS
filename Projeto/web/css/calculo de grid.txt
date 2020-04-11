@@ -1,0 +1,5 @@
+container = largura total do grid
+colunas = numero de colunas
+gutter = a dist entre as colunas
+
+(container / colunas x numero da coluna q eu quero os px)-gutter
